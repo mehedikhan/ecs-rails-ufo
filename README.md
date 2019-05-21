@@ -68,7 +68,7 @@ ufo ps ecs-rails-ufo-web
 Scale process
 
 ```
-ufo scale ecs-rails-ufo-web 2  # 
+ufo scale ecs-rails-ufo-web 2
 ```
 
 
