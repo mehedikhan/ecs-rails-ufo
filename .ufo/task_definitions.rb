@@ -11,7 +11,7 @@
 #
 # More info: http://ufoships.com/docs/helpers/
 #
-task_definition "ecs-rails-ufo-web" do
+task_definition "ecs-rails-ufo-app" do
   source "fargate" # will use ufo/templates/fargate.json.erb
   variables(
     family: task_definition_name,
@@ -26,7 +26,7 @@ task_definition "ecs-rails-ufo-web" do
     #   prefix-name/container-name/ecs-task-id
     # Here's an exmaple when you specify the prefix of "demo"
     #   demo/web/209e93b4-5523-4496-9a27-662fd151eb78
-    awslogs_group: ["ecs/ecs-rails-ufo-web", Ufo.env_extra].compact.join('-'),
+    awslogs_group: ["ecs/ecs-rails-ufo-app", Ufo.env_extra].compact.join('-'),
     awslogs_stream_prefix: "ecs-rails-ufo",
     awslogs_region: helper.current_region,
     # command: ["bin/web"] # IMPORTANT: change or create a bin/web file

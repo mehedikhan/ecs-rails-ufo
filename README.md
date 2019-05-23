@@ -56,19 +56,19 @@ ufo docker push
 Deploy to ECS
 
 ```
-ufo ship ecs-rails-ufo-web 
+ufo ship ecs-rails-ufo-app 
 ```
 
 Show process status
 
 ```
-ufo ps ecs-rails-ufo-web 
+ufo ps ecs-rails-ufo-app 
 ```
 
 Scale process
 
 ```
-ufo scale ecs-rails-ufo-web 2
+ufo scale ecs-rails-ufo-app 2
 ```
 
 
@@ -77,6 +77,6 @@ ufo scale ecs-rails-ufo-web 2
 Delete cloudformation stack
 
 ```
-ufo destroy ecs-rails-ufo-web
+ufo destroy ecs-rails-ufo-app
 ```
 
