@@ -15,7 +15,7 @@ task_definition "ecs-rails-ufo-app" do
   source "fargate" # will use ufo/templates/fargate.json.erb
   variables(
     family: task_definition_name,
-    name: "web",
+    name: "app",
     container_port: helper.dockerfile_port,
     # Comment out awslogs_* if you do not want logs to be sent to CloudWatch.
     # Strongly recommended to use CloudWatch/centralized logging.
